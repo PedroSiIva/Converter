@@ -13,6 +13,7 @@ btn.addEventListener("click", function (e) {
         .replaceAll(" ", "-")
         .replaceAll("--", "-")
         .replaceAll("&", "e")
+        .replaceAll("'", "-")
         .toLowerCase()
         .normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
